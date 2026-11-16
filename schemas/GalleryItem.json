@@ -1,0 +1,14 @@
+{
+  "name": "GalleryItem",
+  "type": "object",
+  "properties": {
+    "title": { "type": "string", "title": "Pavadinimas" },
+    "media_type": { "type": "string", "title": "Tipas", "enum": ["image", "video"], "enumColors": ["pink", "purple"], "default": "image" },
+    "media_url": { "type": "string", "title": "Failas arba nuoroda" },
+    "span": { "type": "string", "title": "Dydis galerijoje", "enum": ["normal", "wide", "tall"], "enumColors": ["gray", "pink", "blue"], "default": "normal" },
+    "order": { "type": "number", "title": "Eilės tvarka", "default": 0 },
+    "is_active": { "type": "boolean", "title": "Rodyti svetainėje", "default": true }
+  },
+  "required": ["media_url"],
+  "rls": { "read": {}, "create": { "user_condition": { "role": "admin" } }, "update": { "user_condition": { "role": "admin" } }, "delete": { "user_condition": { "role": "admin" } } }
+}

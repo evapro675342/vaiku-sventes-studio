@@ -3,475 +3,65 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Svajonų Burbulai | Vaikų švenčių organizavimas</title>
-    <meta
-      name="description"
-      content="Unikali vaikų švenčių organizavimo svetainė su žaismingu dizainu, personažais, švenčių programomis ir kainoraščiu."
-    />
+    <meta name="theme-color" content="#7d5ce7" />
+    <title>PartyHIT | Vaikų švenčių organizavimas</title>
+    <meta name="description" content="PartyHIT – spalvingos vaikų šventės, personažai, žaidimai ir burbulų šou. Išsirinkite programą ir pateikite rezervacijos užklausą." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;700;800&family=Nunito:wght@400;600;700;800&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;700;800&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body data-page="home">
     <div class="page-shell">
       <header class="topbar">
         <div class="container nav-wrap">
-          <a href="#hero" class="brand" aria-label="Svajonų Burbulai pradžia">
-            <span class="brand-mark">✦</span>
-            <span>Svajonų Burbulai</span>
-          </a>
-
+          <a href="#hero" class="brand" aria-label="PartyHIT pradžia"><span class="brand-mark">✦</span><span>PartyHIT</span></a>
           <nav class="main-nav" aria-label="Pagrindinė navigacija">
-            <a href="#characters">Personažai</a>
-            <a href="#programs">Programos</a>
-            <a href="#gallery">Galerija</a>
-            <a href="#pricing">Kainos</a>
-            <a href="#reviews">Atsiliepimai</a>
-            <a href="#contact">Kontaktai</a>
+            <a href="#characters">Personažai</a><a href="#programs">Programos</a><a href="#gallery">Galerija</a><a href="#pricing">Kainos</a><a href="#reviews">Atsiliepimai</a><a href="#contact">Kontaktai</a>
           </nav>
-
           <a href="#contact" class="button button-primary nav-cta">Rezervuoti šventę</a>
         </div>
       </header>
-
       <main>
         <section id="hero" class="hero-section">
-          <div class="hero-decor decor-cloud cloud-1"></div>
-          <div class="hero-decor decor-cloud cloud-2"></div>
-          <div class="hero-decor decor-cloud cloud-3"></div>
-          <div class="hero-decor star star-1"></div>
-          <div class="hero-decor star star-2"></div>
-          <div class="hero-decor star star-3"></div>
-          <div class="hero-decor balloon balloon-1"></div>
-          <div class="hero-decor balloon balloon-2"></div>
-          <div class="hero-decor balloon balloon-3"></div>
-
+          <div class="hero-decor decor-cloud cloud-1"></div><div class="hero-decor decor-cloud cloud-2"></div><div class="hero-decor decor-cloud cloud-3"></div>
+          <div class="hero-decor star star-1"></div><div class="hero-decor star star-2"></div><div class="hero-decor star star-3"></div>
+          <div class="hero-decor balloon balloon-1"></div><div class="hero-decor balloon balloon-2"></div><div class="hero-decor balloon balloon-3"></div>
           <div class="container hero-grid">
             <div class="hero-copy">
-              <span class="eyebrow">Žavingos vaikų šventės</span>
-              <h1 id="hero-title">Vaikystės džiaugsmas, kurį norisi prisiminti vėl ir vėl</h1>
-              <p id="hero-subtitle">
-                Organizuojame naujas, įsimintinas šventes su linksmais personažais,
-                muzika, žaidimais ir atsakingu dėmesiu kiekvienam mažajam svečiui.
-              </p>
-              <div class="hero-actions">
-                <a href="#contact" class="button button-primary">Rezervuoti šventę</a>
-                <a href="#programs" class="button button-secondary">Žiūrėti programas</a>
-              </div>
-              <ul class="hero-metrics" aria-label="Sėkmingų švenčių statistika">
-                <li><strong>200+</strong><span>švenčių</span></li>
-                <li><strong>4.9/5</strong><span>klientų įvertinimas</span></li>
-                <li><strong>100%</strong><span>personalizuotas požiūris</span></li>
-              </ul>
+              <span class="eyebrow" id="hero-kicker">Žavingos vaikų šventės</span>
+              <h1 id="hero-title">Mažos šventės. Dideli prisiminimai.</h1>
+              <p id="hero-subtitle">PartyHIT pripildo vaikų šventes juoko, spalvų ir įsimintinų akimirkų – nuo pirmo žaidimo iki paskutinio burbulo.</p>
+              <div class="hero-actions"><a href="#contact" class="button button-primary" id="hero-cta">Rezervuoti šventę</a><a href="#pricing" class="button button-secondary">Peržiūrėti kainas</a></div>
+              <ul class="hero-metrics" aria-label="PartyHIT pažadai"><li><strong>🎈</strong><span>Žaidimai ir pramogos</span></li><li><strong>✨</strong><span>Originalūs personažai</span></li><li><strong>💜</strong><span>Šventė be rūpesčių</span></li></ul>
             </div>
-
-            <div class="hero-visual" aria-label="Šventės dekoracijos ilustracija">
-              <div class="hero-card card-main">
-                <div class="mini-badge">🎉</div>
-                <span class="card-kicker">Džiaugsmas garantuotas</span>
-                <h3>Unikali šventė kiekvienam vaikui</h3>
-                <div class="mini-rating">
-                  <span>★★★★★</span>
-                  <small>„Neįtikėtina atmosfera!“</small>
-                </div>
-              </div>
-              <div class="hero-card card-float">
-                <span>🎈</span>
-                <strong>Linksmas startas</strong>
-              </div>
-            </div>
+            <div class="hero-visual" aria-label="Šventės dekoracijos iliustracija"><div class="hero-card card-main"><div class="mini-badge">🎉</div><span class="card-kicker">PartyHIT akimirka</span><h3>Šypsenos – geriausia šventės dekoracija</h3><div class="mini-rating"><span>★★★★★</span><small>Spalvinga, jauku ir įsimintina</small></div></div><div class="hero-card card-float"><span>🎈</span><strong>Linksmybės prasideda!</strong></div></div>
           </div>
         </section>
-
-        <section id="characters" class="section light-section">
-          <div class="container section-head">
-            <span class="eyebrow accent">Mūsų personažai</span>
-            <h2>Įdomūs, mieli ir energingi herojai</h2>
-          </div>
-          <div class="container" id="characters-grid"></div>
-        </section>
-
-        <section id="programs" class="section">
-          <div class="container section-head">
-            <span class="eyebrow accent">Švenčių programos</span>
-            <h2>Pasirinkite savo šventės nuotaiką</h2>
-          </div>
-          <div class="container cards-grid" id="programs-grid"></div>
-        </section>
-
-        <section id="gallery" class="section light-section">
-          <div class="container section-head">
-            <span class="eyebrow accent">Galerija</span>
-            <h2>Šventės, kurios palieka prisiminimus</h2>
-          </div>
-          <div class="container gallery-grid" id="gallery-grid"></div>
-        </section>
-
-        <section id="pricing" class="section pricing-section">
-          <div class="container section-head">
-            <span class="eyebrow accent">Kainos</span>
-            <h2>Aiškūs planai ir skaidrios kainos</h2>
-          </div>
-          <div class="container pricing-grid" id="pricing-list"></div>
-        </section>
-
-        <section id="reviews" class="section light-section">
-          <div class="container section-head">
-            <span class="eyebrow accent">Atsiliepimai</span>
-            <h2>Kas sako apie mus</h2>
-          </div>
-          <div class="container reviews-grid" id="reviews-grid"></div>
-        </section>
-
+        <section id="characters" class="section light-section"><div class="container section-head"><span class="eyebrow accent">Mūsų personažai</span><h2>Įdomūs, mieli ir energingi herojai</h2></div><div class="container" id="characters-grid"></div></section>
+        <section id="programs" class="section"><div class="container section-head"><span class="eyebrow accent">Švenčių programos</span><h2>Pramogos mažiems ir dideliems</h2></div><div class="container cards-grid" id="programs-grid"></div></section>
+        <section id="gallery" class="section light-section"><div class="container section-head"><span class="eyebrow accent">Galerija</span><h2>Šventės, kurios palieka prisiminimus</h2></div><div class="container gallery-grid" id="gallery-grid"></div></section>
+        <section id="pricing" class="section pricing-section"><div class="container section-head"><span class="eyebrow accent">Kainos</span><h2>Išsirinkite savo PartyHIT</h2><p>Aiškūs paketai, daug džiaugsmo ir jokio paslėpto siurprizo.</p></div><div class="container pricing-grid" id="pricing-list"></div></section>
+        <section id="reviews" class="section light-section"><div class="container section-head"><span class="eyebrow accent">Atsiliepimai</span><h2>Šventės, apie kurias dar kalbama</h2></div><div class="container reviews-grid" id="reviews-grid"></div></section>
         <section id="contact" class="section contact-section">
           <div class="container contact-grid">
-            <div class="contact-copy">
-              <span class="eyebrow accent">Kontaktai</span>
-              <h2>Pasikalbėkime apie jūsų šventę</h2>
-              <p>
-                Norite įsimintinos šventės be streso? Palikite užklausą ir mes su jumis
-                susisieksime tuoj pat.
-              </p>
-
-              <ul class="contact-list">
-                <li><span>📞</span><a href="tel:+37060012345" id="contact-phone">+370 600 12345</a></li>
-                <li><span>✉️</span><a href="mailto:svajonuburbulai@gmail.com" id="contact-email">svajonuburbulai@gmail.com</a></li>
-                <li><span>📸</span><a href="https://instagram.com/svajonuburbulai" id="contact-instagram" target="_blank" rel="noreferrer">Instagram</a></li>
-                <li><span>👥</span><a href="https://facebook.com/svajonuburbulai" id="contact-facebook" target="_blank" rel="noreferrer">Facebook</a></li>
-              </ul>
+            <div class="contact-copy"><span class="eyebrow accent">Rezervacija</span><h2>Suplanuokime jūsų šventę</h2><p>Užpildykite užklausą – susisieksime ir aptarsime datą, programą bei visas smulkmenas.</p>
+              <ul class="contact-list"><li><span>📞</span><a href="tel:+37060012345" id="contact-phone">+370 600 12345</a></li><li><span>✉️</span><a href="mailto:svajonuburbulai@gmail.com" id="contact-email">El. paštas</a></li><li><span>📸</span><a href="#" id="contact-instagram" target="_blank" rel="noreferrer">Instagram</a></li><li><span>👥</span><a href="#" id="contact-facebook" target="_blank" rel="noreferrer">Facebook</a></li><li><span>📍</span><span id="contact-location">Atvykimo zona – derinama</span></li></ul>
             </div>
-
             <form class="contact-form" id="contact-form">
-              <label>
-                Vardas
-                <input type="text" name="name" placeholder="Jūsų vardas" required />
-              </label>
-              <label>
-                El. paštas
-                <input type="email" name="email" placeholder="Jūsų el. paštas" required />
-              </label>
-              <label>
-                Telefono numeris
-                <input type="tel" name="phone" placeholder="Telefono numeris" />
-              </label>
-              <label>
-                Šventės data
-                <input type="date" name="date" />
-              </label>
-              <label>
-                Žinutė
-                <textarea name="message" rows="4" placeholder="Aprašykite savo šventės idėją" required></textarea>
-              </label>
-              <button type="submit" class="button button-primary">Siųsti užklausą</button>
+              <label>Vardas<input type="text" name="parent_name" autocomplete="name" placeholder="Jūsų vardas" required /></label>
+              <div class="form-grid"><label>Telefonas<input type="tel" name="phone" autocomplete="tel" placeholder="+370…" /></label><label>El. paštas<input type="email" name="email" autocomplete="email" placeholder="vardas@pastas.lt" /></label></div>
+              <div class="form-grid"><label>Šventės data<input type="date" name="event_date" /></label><label>Vaikų skaičius<input type="number" min="1" name="guests" placeholder="Pvz., 12" /></label></div>
+              <label>Programa<select name="program" id="booking-program"><option value="">Pasirinkite programą</option></select></label>
+              <label>Žinutė<textarea name="message" rows="4" placeholder="Vieta, tema ar kiti pageidavimai"></textarea></label>
+              <p class="form-notice" id="booking-status" role="status" aria-live="polite">Užklausa bus išsiųsta, kai svetainėje bus prijungta rezervacijų sistema.</p>
+              <button type="submit" class="button button-primary">Siųsti rezervacijos užklausą</button>
             </form>
           </div>
         </section>
       </main>
-
-      <footer class="site-footer">
-        <div class="container footer-wrap">
-          <p>© 2026 Svajonų Burbulai</p>
-          <a href="admin.html" class="admin-link">Administracija</a>
-        </div>
-      </footer>
+      <footer class="site-footer"><div class="container footer-wrap"><p>© <span id="footer-year">2026</span> <span id="footer-brand">PartyHIT</span>. <span id="footer-note">Šventės, pilnos džiaugsmo.</span></p><a href="admin.html" class="admin-link">Administracija</a></div></footer>
     </div>
-
     <script src="script.js"></script>
   </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

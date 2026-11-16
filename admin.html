@@ -1,35 +1,9 @@
 <!DOCTYPE html>
 <html lang="lt">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Administracija | Svajonų Burbulai</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;700;800&family=Nunito:wght@400;600;700;800&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
+  <head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><title>Administracija | PartyHIT</title><link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /><link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;700;800&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet" /><link rel="stylesheet" href="styles.css" /></head>
   <body data-page="admin" class="admin-page">
-    <div id="login-screen" class="login-screen">
-      <div class="login-box">
-        <h1>Svajonų Burbulai</h1>
-        <p>Įveskite slaptažodį, kad atidarytumėte administravimo skydelį.</p>
-        <input id="password-input" class="password-box" type="password" placeholder="Slaptažodis" />
-        <button id="login-button" class="login-btn" type="button">Prisijungti</button>
-      </div>
-    </div>
-
-    <div id="admin-app" class="admin-shell hidden">
-      <div class="admin-header">
-        <h1>Administravimo skydelis</h1>
-        <a href="index.html" class="button button-secondary">Atgal į svetainę</a>
-      </div>
-      <div id="admin-panel" class="admin-panel"></div>
-    </div>
-
+    <div id="login-screen" class="login-screen"><div class="login-box"><h1>PartyHIT</h1><p>Demonstracinio turinio redagavimas šiame įrenginyje.</p><p class="admin-warning">Šis statinis puslapis neturi saugaus vartotojo prisijungimo. Neįveskite tikro ar naudojamo slaptažodžio.</p><input id="password-input" class="password-box" type="password" placeholder="Demonstracinis slaptažodis" autocomplete="current-password" /><button id="login-button" class="login-btn" type="button">Atidaryti demonstraciją</button></div></div>
+    <div id="admin-app" class="admin-shell hidden"><div class="admin-header"><h1>PartyHIT turinio redagavimas</h1><a href="index.html" class="button button-secondary">Atgal į svetainę</a></div><div id="admin-panel" class="admin-panel"></div></div>
     <script src="script.js"></script>
   </body>
 </html>

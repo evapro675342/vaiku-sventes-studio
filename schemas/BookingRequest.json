@@ -1,0 +1,21 @@
+{
+  "name": "BookingRequest",
+  "type": "object",
+  "properties": {
+    "parent_name": { "type": "string", "title": "Vardas" },
+    "phone": { "type": "string", "title": "Telefonas" },
+    "email": { "type": "string", "title": "El. paštas" },
+    "event_date": { "type": "string", "title": "Šventės data" },
+    "guests": { "type": "string", "title": "Vaikų skaičius" },
+    "program": { "type": "string", "title": "Programa" },
+    "message": { "type": "string", "title": "Žinutė" },
+    "status": { "type": "string", "title": "Būsena", "enum": ["new", "contacted", "confirmed", "declined"], "enumColors": ["blue", "yellow", "green", "red"], "default": "new" }
+  },
+  "required": ["parent_name"],
+  "rls": {
+    "create": {},
+    "read": { "$or": [{ "created_by_id": "{{user.id}}" }, { "user_condition": { "role": "admin" } }] },
+    "update": { "user_condition": { "role": "admin" } },
+    "delete": { "user_condition": { "role": "admin" } }
+  }
+}

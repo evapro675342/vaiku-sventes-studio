@@ -1,0 +1,16 @@
+{
+  "name": "Character",
+  "type": "object",
+  "properties": {
+    "name": { "type": "string", "title": "Vardas" },
+    "role": { "type": "string", "title": "Vaidmuo (etiketė)" },
+    "description": { "type": "string", "title": "Aprašymas" },
+    "quote": { "type": "string", "title": "Citata" },
+    "image_url": { "type": "string", "title": "Nuotrauka" },
+    "color": { "type": "string", "title": "Kortelės spalva", "enum": ["rose", "grape", "turq", "sun", "sky"], "enumColors": ["pink", "purple", "blue", "yellow", "blue"], "default": "rose" },
+    "order": { "type": "number", "title": "Eilės tvarka", "default": 0 },
+    "is_active": { "type": "boolean", "title": "Rodyti svetainėje", "default": true }
+  },
+  "required": ["name"],
+  "rls": { "read": {}, "create": { "user_condition": { "role": "admin" } }, "update": { "user_condition": { "role": "admin" } }, "delete": { "user_condition": { "role": "admin" } } }
+}

@@ -1,0 +1,17 @@
+{
+  "name": "PricePlan",
+  "type": "object",
+  "properties": {
+    "title": { "type": "string", "title": "Pavadinimas" },
+    "price": { "type": "string", "title": "Kaina" },
+    "meta": { "type": "string", "title": "Trukmė ir dalyviai" },
+    "description": { "type": "string", "title": "Aprašymas" },
+    "features": { "type": "array", "title": "Kas įeina", "items": { "type": "string" } },
+    "is_popular": { "type": "boolean", "title": "Išskirti kaip populiariausią", "default": false },
+    "color": { "type": "string", "title": "Spalva", "enum": ["rose", "grape", "turq", "sun", "sky"], "enumColors": ["pink", "purple", "blue", "yellow", "blue"], "default": "rose" },
+    "order": { "type": "number", "title": "Eilės tvarka", "default": 0 },
+    "is_active": { "type": "boolean", "title": "Rodyti svetainėje", "default": true }
+  },
+  "required": ["title", "price"],
+  "rls": { "read": {}, "create": { "user_condition": { "role": "admin" } }, "update": { "user_condition": { "role": "admin" } }, "delete": { "user_condition": { "role": "admin" } } }
+}

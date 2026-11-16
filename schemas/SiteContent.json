@@ -1,0 +1,21 @@
+{
+  "name": "SiteContent",
+  "type": "object",
+  "properties": {
+    "brand_name": { "type": "string", "title": "Pavadinimas" },
+    "tagline": { "type": "string", "title": "Šūkis po pavadinimu" },
+    "hero_kicker": { "type": "string", "title": "Viršutinė etiketė" },
+    "hero_title": { "type": "string", "title": "Pagrindinė antraštė" },
+    "hero_highlight": { "type": "string", "title": "Antroji antraštės eilutė" },
+    "hero_subtitle": { "type": "string", "title": "Antraštės aprašymas" },
+    "hero_cta": { "type": "string", "title": "Mygtuko tekstas" },
+    "hero_image_url": { "type": "string", "title": "Pagrindinė nuotrauka" },
+    "phone": { "type": "string", "title": "Telefonas" },
+    "email": { "type": "string", "title": "El. paštas" },
+    "instagram_url": { "type": "string", "title": "Instagram nuoroda" },
+    "facebook_url": { "type": "string", "title": "Facebook nuoroda" },
+    "location": { "type": "string", "title": "Vieta / atvykimo zona" },
+    "footer_note": { "type": "string", "title": "Tekstas apačioje" }
+  },
+  "rls": { "read": {}, "create": { "user_condition": { "role": "admin" } }, "update": { "user_condition": { "role": "admin" } }, "delete": { "user_condition": { "role": "admin" } } }
+}
