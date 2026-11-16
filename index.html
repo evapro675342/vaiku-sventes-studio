@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="lt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Svajonų Burbulai | Vaikų švenčių organizavimas</title>
+    <meta
+      name="description"
+      content="Unikali vaikų švenčių organizavimo svetainė su žaismingu dizainu, personažais, švenčių programomis ir kainoraščiu."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;700;800&family=Nunito:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-page="home">
+    <div class="page-shell">
+      <header class="topbar">
+        <div class="container nav-wrap">
+          <a href="#hero" class="brand" aria-label="Svajonų Burbulai pradžia">
+            <span class="brand-mark">✦</span>
+            <span>Svajonų Burbulai</span>
+          </a>
+
+          <nav class="main-nav" aria-label="Pagrindinė navigacija">
+            <a href="#characters">Personažai</a>
+            <a href="#programs">Programos</a>
+            <a href="#gallery">Galerija</a>
+            <a href="#pricing">Kainos</a>
+            <a href="#reviews">Atsiliepimai</a>
+            <a href="#contact">Kontaktai</a>
+          </nav>
+
+          <a href="#contact" class="button button-primary nav-cta">Rezervuoti šventę</a>
+        </div>
+      </header>
+
+      <main>
+        <section id="hero" class="hero-section">
+          <div class="hero-decor decor-cloud cloud-1"></div>
+          <div class="hero-decor decor-cloud cloud-2"></div>
+          <div class="hero-decor decor-cloud cloud-3"></div>
+          <div class="hero-decor star star-1"></div>
+          <div class="hero-decor star star-2"></div>
+          <div class="hero-decor star star-3"></div>
+          <div class="hero-decor balloon balloon-1"></div>
+          <div class="hero-decor balloon balloon-2"></div>
+          <div class="hero-decor balloon balloon-3"></div>
+
+          <div class="container hero-grid">
+            <div class="hero-copy">
+              <span class="eyebrow">Žavingos vaikų šventės</span>
+              <h1 id="hero-title">Vaikystės džiaugsmas, kurį norisi prisiminti vėl ir vėl</h1>
+              <p id="hero-subtitle">
+                Organizuojame naujas, įsimintinas šventes su linksmais personažais,
+                muzika, žaidimais ir atsakingu dėmesiu kiekvienam mažajam svečiui.
+              </p>
+              <div class="hero-actions">
+                <a href="#contact" class="button button-primary">Rezervuoti šventę</a>
+                <a href="#programs" class="button button-secondary">Žiūrėti programas</a>
+              </div>
+              <ul class="hero-metrics" aria-label="Sėkmingų švenčių statistika">
+                <li><strong>200+</strong><span>švenčių</span></li>
+                <li><strong>4.9/5</strong><span>klientų įvertinimas</span></li>
+                <li><strong>100%</strong><span>personalizuotas požiūris</span></li>
+              </ul>
+            </div>
+
+            <div class="hero-visual" aria-label="Šventės dekoracijos ilustracija">
+              <div class="hero-card card-main">
+                <div class="mini-badge">🎉</div>
+                <span class="card-kicker">Džiaugsmas garantuotas</span>
+                <h3>Unikali šventė kiekvienam vaikui</h3>
+                <div class="mini-rating">
+                  <span>★★★★★</span>
+                  <small>„Neįtikėtina atmosfera!“</small>
+                </div>
+              </div>
+              <div class="hero-card card-float">
+                <span>🎈</span>
+                <strong>Linksmas startas</strong>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="characters" class="section light-section">
+          <div class="container section-head">
+            <span class="eyebrow accent">Mūsų personažai</span>
+            <h2>Įdomūs, mieli ir energingi herojai</h2>
+          </div>
+          <div class="container" id="characters-grid"></div>
+        </section>
+
+        <section id="programs" class="section">
+          <div class="container section-head">
+            <span class="eyebrow accent">Švenčių programos</span>
+            <h2>Pasirinkite savo šventės nuotaiką</h2>
+          </div>
+          <div class="container cards-grid" id="programs-grid"></div>
+        </section>
+
+        <section id="gallery" class="section light-section">
+          <div class="container section-head">
+            <span class="eyebrow accent">Galerija</span>
+            <h2>Šventės, kurios palieka prisiminimus</h2>
+          </div>
+          <div class="container gallery-grid" id="gallery-grid"></div>
+        </section>
+
+        <section id="pricing" class="section pricing-section">
+          <div class="container section-head">
+            <span class="eyebrow accent">Kainos</span>
+            <h2>Aiškūs planai ir skaidrios kainos</h2>
+          </div>
+          <div class="container pricing-grid" id="pricing-list"></div>
+        </section>
+
+        <section id="reviews" class="section light-section">
+          <div class="container section-head">
+            <span class="eyebrow accent">Atsiliepimai</span>
+            <h2>Kas sako apie mus</h2>
+          </div>
+          <div class="container reviews-grid" id="reviews-grid"></div>
+        </section>
+
+        <section id="contact" class="section contact-section">
+          <div class="container contact-grid">
+            <div class="contact-copy">
+              <span class="eyebrow accent">Kontaktai</span>
+              <h2>Pasikalbėkime apie jūsų šventę</h2>
+              <p>
+                Norite įsimintinos šventės be streso? Palikite užklausą ir mes su jumis
+                susisieksime tuoj pat.
+              </p>
+
+              <ul class="contact-list">
+                <li><span>📞</span><a href="tel:+37060012345" id="contact-phone">+370 600 12345</a></li>
+                <li><span>✉️</span><a href="mailto:svajonuburbulai@gmail.com" id="contact-email">svajonuburbulai@gmail.com</a></li>
+                <li><span>📸</span><a href="https://instagram.com/svajonuburbulai" id="contact-instagram" target="_blank" rel="noreferrer">Instagram</a></li>
+                <li><span>👥</span><a href="https://facebook.com/svajonuburbulai" id="contact-facebook" target="_blank" rel="noreferrer">Facebook</a></li>
+              </ul>
+            </div>
+
+            <form class="contact-form" id="contact-form">
+              <label>
+                Vardas
+                <input type="text" name="name" placeholder="Jūsų vardas" required />
+              </label>
+              <label>
+                El. paštas
+                <input type="email" name="email" placeholder="Jūsų el. paštas" required />
+              </label>
+              <label>
+                Telefono numeris
+                <input type="tel" name="phone" placeholder="Telefono numeris" />
+              </label>
+              <label>
+                Šventės data
+                <input type="date" name="date" />
+              </label>
+              <label>
+                Žinutė
+                <textarea name="message" rows="4" placeholder="Aprašykite savo šventės idėją" required></textarea>
+              </label>
+              <button type="submit" class="button button-primary">Siųsti užklausą</button>
+            </form>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="container footer-wrap">
+          <p>© 2026 Svajonų Burbulai</p>
+          <a href="admin.html" class="admin-link">Administracija</a>
+        </div>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
